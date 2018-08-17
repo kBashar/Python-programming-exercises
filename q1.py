@@ -1,14 +1,3 @@
-#Question 1
-#Level 1
-#
-#Question:
-#Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
-#between 2000 and 3200 (both included).
-#The numbers obtained should be printed in a comma-separated sequence on a single line.
-#
-#Hints: 
-#Consider use range(#begin, #end) method
-
 def printnumbers():
     numbers = [] 
     k=1
@@ -25,5 +14,20 @@ def fact(n):
 		fa = fa * d
 	return fa;
 
-n = int(input('Number --> '))
-print(fact(n))
+#n = int(input('Number --> '))
+#print(fact(n)) 
+
+#Problem 3, asks to print a dictionary where values are square of the key. n is input.
+
+def sqdic(n):
+    return {x: x*x for x in range(1,n+1)}
+
+def sqdic2(n):
+    d = {}
+    for x in range(1,n+1):
+        d[x] = x*x;
+    return d
+
+n = int(input("Number->"))
+print(sqdic2(n))
+
