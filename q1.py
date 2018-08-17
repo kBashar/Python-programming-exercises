@@ -27,7 +27,13 @@ def sqdic2(n):
     for x in range(1,n+1):
         d[x] = x*x;
     return d
+#Problem 4, str split and rsplit methods use
 
-n = int(input("Number->"))
-print(sqdic2(n))
+def splitthestr(s):
+    print(type(s)) 
+    slist = s.split(',')
+    print(slist)
+    print(tuple(slist))
 
+sa = input("give numbers")
+splitthestr(sa)
