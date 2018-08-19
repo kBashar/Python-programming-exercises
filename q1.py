@@ -1,3 +1,5 @@
+import math
+
 def printnumbers():
     numbers = [] 
     k=1
@@ -35,5 +37,36 @@ def splitthestr(s):
     print(slist)
     print(tuple(slist))
 
-sa = input("give numbers")
-splitthestr(sa)
+#sa = input("give numbers")
+#splitthestr(sa)
+
+class TestClass:
+
+    def __init__(self, name):
+        self.name = name;
+
+    def getwelcomemessage(self):
+        print('hello {}'.format(self.name))
+
+#tc = TestClass("Jubayer")
+#tc.getwelcomemessage()
+
+# problem 6
+
+def calculateQ(D):
+    C = 50
+    H = 30
+    Q = math.sqrt((2*C*D)/H)
+    return math.floor(Q)
+def getnumbers(st):
+    l = st.split(',')
+    nl = [int(x) for x in l]
+    return nl
+
+#s = input("--> Numbers: ")
+#l = [calculateQ(x) for x in getnumbers(s)]
+#l = map(str, l)
+#print (','.join(l))
+
+#problem 7
+
